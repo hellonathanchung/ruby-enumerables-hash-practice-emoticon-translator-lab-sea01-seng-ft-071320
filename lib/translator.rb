@@ -28,4 +28,3 @@ def get_english_meaning(fi)
   end
   emoticon ? emoticon : "Sorry, that emoticon was not found"
 end
-end
