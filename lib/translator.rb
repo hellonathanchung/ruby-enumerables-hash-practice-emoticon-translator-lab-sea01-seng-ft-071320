@@ -15,13 +15,15 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  emoticon = load_libray(file_path)
-  emoji = emoticon.values.find {|faces| faces[0] == emoticon}
+  emoticons = load_libray(file_path)
+  emoji = emoticons.values.find {|faces| faces[0] == emoticon}
   emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
   binding.pry
 end
 
 def get_english_meaning(file_path, emoticon)
-  emoticon = load_libray(file_path)
+  emoticons = load_libray(file_path)
+  emoji = library.keys.find {|faces| faces[1] == emoticon}
+  
 
 end
