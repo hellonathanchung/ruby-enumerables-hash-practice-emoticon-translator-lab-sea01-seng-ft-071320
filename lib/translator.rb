@@ -18,7 +18,6 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_libray(file_path)
   emoji = emoticons.values.find {|faces| faces[0] == emoticon}
   emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
-  binding.pry
 end
 
 def get_english_meaning(file_path, emoticon)
